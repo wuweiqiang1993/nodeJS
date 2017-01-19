@@ -1,0 +1,38 @@
+<% if (comments.length) { %>
+  <table class="table table-condensed table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>
+         id
+        </th>
+        <th>
+          标题
+        </th>
+        <th>
+          时间
+        </th>
+        <th>
+         内容
+        </th>
+      </tr>
+    </thead>
+    </tbody>
+    <% comments.forEach(function(user){ %>
+    <tr>
+      <td>
+        <%=user.id%>
+      </td>
+      <td>
+        <%=user.title%>
+      </td>
+      <td>
+        <%=user.time%>
+      </td>
+      <td>
+        <%=user.work%>
+      </td>
+    </tr>
+      <% }) %>
+      </tbody>
+  </table>
+<% } %>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="../../public/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../public/js/bootstrap.min.js">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
+    <title>nodejs+ejs+bootstrap模板</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3 class="text-center text-info">
+                    <%= title %>
+                </h3>
+                <% include ../cmment %>
+                    <!--有重复的部分可以写成一个单独的.ejs文件，需要时引入-->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
